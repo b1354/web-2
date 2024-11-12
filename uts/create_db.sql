@@ -19,3 +19,12 @@ CREATE TABLE bay_trxpenjualan (
     tanggal TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (bay_kodebarang) REFERENCES bay_mstbarang(bay_kodebarang)
 );
+
+INSERT INTO bay_trxpenjualan (bay_idpenjualan, bay_kodebarang, bay_jumlah, tanggal) VALUES
+(1, '0101', 2),
+(2, '0103', 4),
+(3, '0102', 5),
+(4, '0103', 2),
+(5, '0102', 4),
+(6, '0101', 1),
+(7, '0103', 7);
